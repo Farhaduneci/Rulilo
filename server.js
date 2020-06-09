@@ -1,13 +1,11 @@
-const app = require('express')();
-const passport = require('passport');
+const express = require('express');
+const app = express();
 
 app.set('view-engine', 'ejs');
+app.use(express.urlencoded({ extended: false }));
 
-app.get('/', (req, res) => res.render('index.ejs'));
+require('./startup/database')();
+require('./startup/route')(app);
 
-app.get('/register', (req, res) => res.render('register.ejs'));
-
-app.get('/login', (req, res) => res.render('login.ejs'));
-
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Listening on port ${port}...`));
