@@ -1,11 +1,13 @@
-const {User, validate} = require('../model/user');
 const router = require('express').Router();
-const bcrypt = require('bcrypt');
+const passport = require('passport');
 
 router.get('/', (req, res) => res.render('login.ejs'));
 
-router.post('/', async (req, res) => {
-    res.send(req.body)
-});
+router.post('/', passport.authenticate('local', {
+    failureRedirect: '/login',
+    failureFlash: true
+    }),
+    (req, res) => res.render('index.ejs', {name: req.user.name })
+)
 
 module.exports = router; 
