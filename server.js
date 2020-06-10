@@ -4,7 +4,7 @@ const app = express();
 
 require('./startup/configApp')(app, passport);
 require('./startup/database')();
-require('./passport-config')(passport);
+require('./startup/passport')(passport);
 require('./startup/route')(app);
 
 const port = process.env.PORT || 3000;

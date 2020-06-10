@@ -1,5 +1,5 @@
 const localStrategy = require('passport-local').Strategy;
-const { User } = require('./model/user');
+const { User } = require('../model/user');
 const bcrypt = require('bcrypt');
 
 module.exports = function(passport) {
@@ -10,7 +10,7 @@ module.exports = function(passport) {
 
             const validation = await bcrypt.compare(password, user.password)
             if (!validation) return done(null, false, { message: 'Invalid password.' });
-
+            
             return done(null, user);
         } catch(e) {
             return done(e);
