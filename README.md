@@ -23,4 +23,4 @@ otherwise they would be redirected to login page!
 
 * **Farhad Uneci** - *Initial work* - [Farhaduneci](https://github.com/Farhaduneci) | [Farhaduneci.ir](https://Farhaduneci.ir)
 
-See also the list of [Contributors](https://github.com/Farhaduneci/Useful-Codes/graphs/contributors) who participated in this project.
+See also the list of [Contributors](https://github.com/Farhaduneci/Rulilo/graphs/contributors) who participated in this project.
