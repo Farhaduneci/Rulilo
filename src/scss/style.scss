@@ -22,7 +22,6 @@ body {
 }
 
 .left {
-    font-family: 'Dancing Script', cursive;
     background-color: $primary-color;
     color: $main-white;
 
@@ -32,10 +31,6 @@ body {
 }
 
 .right {
-    img {
-        margin-left: -10%;
-    }
-
     form {
         input {
             &:valid {

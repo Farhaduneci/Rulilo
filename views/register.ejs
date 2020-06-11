@@ -1,24 +1,37 @@
-<h1>
-    Register
-</h1>
-
-<form action="/register" method="POST">
-    <div class="row">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="row h-100 m-0">
+        <div class="col-md center left">
+            <h1 class="display-1">Rulilo</h1>
+            <p>Register users, login & logout</p>
+        </div>
+        <div class="col-md center order-first right">
+            <img src="/src/image/register.svg" alt="Register" class="w-50 d-none d-md-block mb-5">
+            <form action="/register" method="POST" class="w-75">
+                <h2 class="mb-3">Register</h2>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email" name="email" required>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" name="password" required>
+                </div>
+                <div class="d-flex">
+                    <a href="/login" class="btn btn-link">Sign in</a>
+                    <button type="submit" class="btn btn-primary ml-auto">Register</button>
+                </div>
+            </form>
+        </div>
     </div>
-
-    <div class="row">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-
-    <div class="row">
-        <label for="pass">Password</label>
-        <input type="password" id="pass" name="password" required>
-    </div>
-
-    <button type="submit">Register</button>
-
-    <a href="/login">Login</a>
-</form>
+</body>
+</html>

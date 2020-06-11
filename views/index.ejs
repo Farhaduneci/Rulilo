@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container center h-100">
+        <div class="head text-uppercase text-center mb-5">
+            <h1 class="font-weight-bold">Welcome <%= user.name %></h1>
+            <strong>Here are you're info</strong>
+        </div>
+        <div class="main w-50">
+            <div class="card border-secondary mb-5">
+                <div class="card-header">
+                    <h2 class="card-title">You're saved info here</h2>
+                    <p class="card-subtitle">
+                        These info can be alot more in a real project, this is only a demo
+                    </p>
+                </div>
+                <div class="card-body text-secondary">
+                    <h5 class="card-title">Email: <%= user.email %></h5>
+                    <p class="card-text">
+                        A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <a href="/logout" class="btn btn-outline-secondary btn-block">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
