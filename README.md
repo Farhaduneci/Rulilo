@@ -13,6 +13,7 @@ git clone https://github.com/Farhaduneci/Rulilo
 
 ### Usage
 
+- run `npm run build`
 - run `npm start` or `npm run devStart` and visit **http://localhost:8080/** in browser
 
 ### Info
