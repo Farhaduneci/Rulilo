@@ -20,6 +20,10 @@ git clone https://github.com/Farhaduneci/Rulilo
 This application checks users identity, authenticated users will see their own info and panel,
 otherwise they would be redirected to login page!
 
+### Demo
+![Signup Mock](/Demo/Signup-Mock.png)
+![Sign in Mock](/Demo/Signin-Mock.png)
+
 ## Authors
 
 * **Farhad Uneci** - *Initial work* - [Farhaduneci](https://github.com/Farhaduneci) | [Farhaduneci.ir](https://Farhaduneci.ir)
